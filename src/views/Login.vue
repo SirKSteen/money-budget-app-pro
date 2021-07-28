@@ -6,15 +6,19 @@
       </div>
       <div class="login-Username">
         <label>Username</label>
-        <input type="text" name="username" v-model="username" required/>
+        <input type="text" name="username" v-model="username" required />
       </div>
       <div class="login-Password">
         <label>Password</label>
-        <input type="password" name="password" v-model="password" required/>
+        <input type="password" name="password" v-model="password" required />
       </div>
       <div class="login-Submit">
         <input type="submit" value="Submit" />
       </div>
+
+      <router-link to="/home">
+        <button>Home</button>
+      </router-link>
       <div v-show="showErrorMessage">
         <p>Incorrect username and password. Try again.</p>
       </div>
@@ -123,7 +127,7 @@ export default {
   cursor: pointer;
 }
 
-p{
+p {
   text-align: center;
   color: rgb(194, 3, 3);
   font-size: 14.5px;
