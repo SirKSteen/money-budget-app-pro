@@ -15,10 +15,6 @@
       <div class="login-Submit">
         <input type="submit" value="Submit" />
       </div>
-
-      <router-link to="/home">
-        <button>Home</button>
-      </router-link>
       <div v-show="showErrorMessage">
         <p>Incorrect username and password. Try again.</p>
       </div>
